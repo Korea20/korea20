@@ -3,6 +3,7 @@
   "gproc": {:git, "https://github.com/uwiger/gproc", "26a9d9faff7b9fd60687d4bcfd3d6974b73205f3", [branch: "master"]},
   "jsex": {:package, "2.0.0"},
   "jsx": {:package, "2.1.1"},
+  "micromacro": {:git, "https://github.com/manpages/micromacro.git", "e3b20bb1864294450a5f85da1ec0def8c40f5490", [branch: "master"]},
   "plug": {:package, "0.6.0"},
   "ranch": {:package, "1.0.0"},
-  "unplug": {:git, "https://github.com/manpages/plugplug.git", "6cee88097f14cd08d5017ca9ce0150c2003f141f", [branch: "master"]}}
+  "unplug": {:git, "https://github.com/manpages/plugplug.git", "a1feb2d8ef48afee8d93f2aa796ec3e4ebbaf66a", [branch: "master"]}}

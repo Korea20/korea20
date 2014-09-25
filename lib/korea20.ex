@@ -1,19 +1,16 @@
 defmodule Korea20 do
   use Application
+  require MicroMacro.Sup
+  import MicroMacro.Sup
 
-  # See http://elixir-lang.org/docs/stable/elixir/Application.html
-  # for more information on OTP Applications
-  def start(_type, _args) do
-    import Supervisor.Spec, warn: false
-
+  defsup Root, link: [name: __MODULE__] do
     children = [
-      # Define workers and child supervisors to be supervised
-      # worker(Korea20.Worker, [arg1, arg2, arg3])
+      Korea20.Plug.Root |> worker([]),
     ]
+    supervise(children, strategy: :one_for_one)
+  end
 
-    # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
-    # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: Korea20.Supervisor]
-    Supervisor.start_link(children, opts)
+  def start(_type, _args) do
+    Korea20.Root.start_link()
   end
 end
