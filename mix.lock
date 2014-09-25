@@ -1,0 +1,8 @@
+%{"cowboy": {:package, "1.0.0"},
+  "cowlib": {:package, "1.0.0"},
+  "gproc": {:git, "https://github.com/uwiger/gproc", "26a9d9faff7b9fd60687d4bcfd3d6974b73205f3", [branch: "master"]},
+  "jsex": {:package, "2.0.0"},
+  "jsx": {:package, "2.1.1"},
+  "plug": {:package, "0.6.0"},
+  "ranch": {:package, "1.0.0"},
+  "unplug": {:git, "https://github.com/manpages/plugplug.git", "6cee88097f14cd08d5017ca9ce0150c2003f141f", [branch: "master"]}}
